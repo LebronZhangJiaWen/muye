@@ -20,6 +20,7 @@ D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\listener\InitL
 D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\web\manage\ActionController.java
 D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\directive\GroupDirective.java
 D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\directive\ArticleDirective.java
+D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\util\GetPropertiesUtil.java
 D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\web\manage\IndexController.java
 D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\interceptor\AdminLoginInterceptor.java
 D:\IDEWorkSpace\jeesns\jeesns-web\src\main\java\com\lxinet\jeesns\web\front\GroupController.java

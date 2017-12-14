@@ -22,7 +22,7 @@ jQuery(function() {
         pick: '#picker',
         accept: {
             title: 'Images',
-            extensions: 'gif,jpg,jpeg,bmp,png',
+            extensions: 'gif,jpg,jpeg,bmp',
             mimeTypes: 'image/jpg,image/jpeg,image/png,image/gif,image/bmp'
         }
     });

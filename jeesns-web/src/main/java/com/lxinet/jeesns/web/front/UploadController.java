@@ -9,6 +9,7 @@ import com.lxinet.jeesns.service.picture.IPictureService;
 import com.lxinet.jeesns.core.utils.Const;
 import com.lxinet.jeesns.core.utils.ImageUtil;
 import com.lxinet.jeesns.core.utils.StringUtils;
+import com.lxinet.jeesns.util.GetPropertiesUtil;
 import com.lxinet.jeesns.web.common.BaseController;
 import com.lxinet.jeesns.model.member.Member;
 import com.lxinet.jeesns.service.member.IMemberService;
@@ -39,6 +40,7 @@ public class UploadController extends BaseController {
 	private IPictureService pictureService;
 	@Resource
 	private IPictureAlbumService pictureAlbumService;
+
 
 	@RequestMapping("${managePath}/uploadImage")
 	@ResponseBody
@@ -99,8 +101,11 @@ public class UploadController extends BaseController {
 		String newFileName = UUID.randomUUID() + suffix;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		String ymd = sdf.format(new Date());
-		String path = Const.UPLOAD_PATH + "/images/"+ymd+"/";
-		String savePath = request.getServletContext().getRealPath(path);
+		//String path = Const.UPLOAD_PATH + "/images/"+ymd+"/";
+		Properties prop = new GetPropertiesUtil().getProp();
+		String path = prop.getProperty("imagePath") + "/images/"+ymd+"/";
+		//String savePath = request.getServletContext().getRealPath(path);
+		String savePath=path;
 		File baseFile = new File(savePath);
 		File targetFile = new File(baseFile, newFileName);
 
@@ -110,6 +115,7 @@ public class UploadController extends BaseController {
 		//保存
 		try {
 			file.transferTo(targetFile);
+			path=prop.getProperty("httpImagePath")+ "/images/"+ymd+"/";
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -172,8 +178,11 @@ public class UploadController extends BaseController {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMM");
 		String fileName = UUID.randomUUID()+".jpg";
 		String ymd = simpleDateFormat.format(new Date());
-		String filePath = Const.UPLOAD_PATH + "/avatar/" + ymd + "/";
-		String savePath = request.getServletContext().getRealPath(filePath);
+		//String filePath = Const.UPLOAD_PATH + "/avatar/" + ymd + "/";
+		Properties prop = new GetPropertiesUtil().getProp();
+		String filePath =prop.getProperty("imagePath")+ "/avatar/" + ymd + "/";
+		//String savePath = request.getServletContext().getRealPath(filePath);
+		String savePath=filePath;
 		File baseFile = new File(savePath);
 		File targetFile = new File(savePath, fileName);
 
@@ -191,7 +200,7 @@ public class UploadController extends BaseController {
 		Map result = new HashMap();
 		if(findMember != null){
 			String oldAvatar = findMember.getAvatar();
-			findMember.setAvatar(filePath + fileName);
+			findMember.setAvatar(prop.getProperty("httpImagePath")+ "/avatar/"+ymd+"/" + fileName);
 			ResponseModel responseModel = memberService.updateAvatar(findMember,oldAvatar,request);
 			if (responseModel.getCode() == 0){
 				MemberUtil.setLoginMember(request, findMember);

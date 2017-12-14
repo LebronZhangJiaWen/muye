@@ -1,7 +1,7 @@
 <header class="main-header">
-    <a href="http://www.jeesns.cn" class="logo" target="_blank">
-        <span class="logo-mini"><b>JEE</b></span>
-        <span class="logo-lg"><b>JEESNS</b></span>
+    <a href="http://www.silinmuye.com" class="logo" target="_blank">
+        <span class="logo-mini"><b>MUYE</b></span>
+        <span class="logo-lg"><b>MUYE</b></span>
     </a>
     <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
