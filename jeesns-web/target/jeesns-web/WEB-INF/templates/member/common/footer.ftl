@@ -7,7 +7,7 @@
                         ${SITE_NAME}
                     </div>
                     <div class="text-center">
-                        <strong>Powered By <a href="http://www.jeesns.cn" target="_blank">JEESNS</a> ${SITE_COPYRIGHT} ${SITE_ICP}</strong>
+                        <strong>Powered By <a href="http://www.silinmuye.com" target="_blank">MUYE</a> ${SITE_COPYRIGHT} ${SITE_ICP}</strong>
                         ${SITE_TONGJI}
                     </div>
                 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会员动态类型 - ${SITE_NAME} - JEESNS后台管理系统 - Powered By JEESNS</title>
+    <title>会员动态类型 - ${SITE_NAME} - JEESNS后台管理系统 - Powered By MUYE</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
     <meta name="author" content="JEESNS"/>

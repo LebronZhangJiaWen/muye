@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
-    <title>${picture.member.name}的图片 - ${SITE_NAME} - Powered By JEESNS</title>
+    <title>${picture.member.name}的图片 - ${SITE_NAME} - Powered By MUYE</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
     <meta name="author" content="JEESNS"/>
