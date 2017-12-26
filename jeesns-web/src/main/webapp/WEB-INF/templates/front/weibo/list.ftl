@@ -7,7 +7,7 @@
     <title>${WEIBO_ALIAS}中心 - ${SITE_NAME} - Powered By MUYE</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="JEESNS"/>
+    <meta name="author" content="MUYE"/>
     <link href="${basePath}/res/common/css/zui.min.css" rel="stylesheet">
     <link href="${basePath}/res/front/css/app.css" rel="stylesheet">
     <link href="${basePath}/res/plugins/emoji/css/emoji.css" rel="stylesheet">

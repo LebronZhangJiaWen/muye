@@ -197,7 +197,7 @@
                                                         <#--<li>修复：发布微博提示undefined</li>-->
                                                         <#--<li>修复：微博不显示图片的问题</li>-->
                                                         <#--<li>修复：在windows系统下微博emoji不能显示问题</li>-->
-                                                        <#--<li>修复：如果应用部署在子目录下，如/jeesns，使用富文本编辑器上传图片时，图片无法显示问题，临时修复方法</li>-->
+                                                        <#--<li>修复：如果应用部署在子目录下，如/MUYE，使用富文本编辑器上传图片时，图片无法显示问题，临时修复方法</li>-->
                                                         <#--<li>修复：微博列表右边热门微博显示跟最新微博内容一样的问题</li>-->
                                                         <#--<li>修复：文章列表右边热门文章显示跟最新文章一样的问题</li>-->
                                                         <#--<li>增加：微博点赞、微博回复、文章回复、文章喜欢、群组帖子回复、群组帖子喜欢发送系统消息通知</li>-->
@@ -421,7 +421,7 @@
 </div>
 <script>
     $(document).ready(function () {
-//        $.getJSON("http://www.jeesns.cn/newVersion?callback=?", function(result){
+//        $.getJSON("http://www.MUYE.cn/newVersion?callback=?", function(result){
 //            $(".lastSystemVersion").html(result.LAST_SYSTEM_VERSION);
 //            $(".lastSystemUpdateTime").html(result.LAST_SYSTEM_UPDATE_TIME);
 //        });

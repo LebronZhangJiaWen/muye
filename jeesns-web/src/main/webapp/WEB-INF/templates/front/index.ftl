@@ -7,7 +7,7 @@
     <title>${SITE_NAME} - ${SITE_SEO_TITLE} - Powered By MUYE</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="JEESNS"/>
+    <meta name="author" content="MUYE"/>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="${basePath}/res/common/css/zui.min.css" rel="stylesheet">
     <link href="${basePath}/res/front/css/app.css" rel="stylesheet">

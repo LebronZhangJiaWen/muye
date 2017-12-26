@@ -6,7 +6,7 @@
     <title>修改资料 - ${SITE_NAME} - Powered By MUYE</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="JEESNS"/>
+    <meta name="author" content="MUYE"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="${basePath}/res/common/css/jeesns.css">

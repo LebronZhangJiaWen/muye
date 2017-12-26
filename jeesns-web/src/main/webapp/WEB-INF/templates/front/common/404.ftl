@@ -6,7 +6,7 @@
     <title>页面找不到 - ${SITE_NAME} - Powered By MUYE</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="JEESNS"/>
+    <meta name="author" content="MUYE"/>
     <script src="${basePath}/res/common/js/jquery-2.1.1.min.js"></script>
     <style type="text/css">
         *{margin:0;padding:0;list-style-type:none;}
