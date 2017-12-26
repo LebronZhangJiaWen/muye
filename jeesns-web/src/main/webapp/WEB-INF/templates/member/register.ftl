@@ -10,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link href="${basePath}/res/common/css/jeesns.css" rel="stylesheet">
+    <link href="${basePath}/res/common/css/muye.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -22,7 +22,7 @@
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/manage.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 
 </head>
 <body class="gray-bg">
@@ -33,7 +33,7 @@
         <div class="col-md-4">
             <div class="ibox-content">
                 <h3>欢迎加入${SITE_NAME}</h3>
-                <form class="m-t jeesns_form" action="${basePath}/member/register" method="post">
+                <form class="m-t muye_form" action="${basePath}/member/register" method="post">
                     <div class="form-group">
                         用户名
                         <input type="text" name="name" class="form-control" placeholder="用户名" data-type="require">

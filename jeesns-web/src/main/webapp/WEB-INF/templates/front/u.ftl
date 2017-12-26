@@ -9,8 +9,8 @@
     <meta name="author" content="MUYE"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="${basePath}/res/common/css/jeesns.css">
-    <link rel="stylesheet" href="${basePath}/res/common/css/jeesns-skin.css">
+    <link rel="stylesheet" href="${basePath}/res/common/css/muye.css">
+    <link rel="stylesheet" href="${basePath}/res/common/css/muye-skin.css">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -19,7 +19,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
     <script src="${basePath}/res/modules/mem.js"></script>
     <script src="${basePath}/res/plugins/emoji/js/emojis.js"></script>
@@ -53,7 +53,7 @@
                             <a class="label label-primary member-follows" member-id="${member.id}">
                                 <i class="fa fa-heart-o"></i> 关注
                             </a>
-                            <a class="label label-primary" href="${basePath}/member/sendMessageBox?mid=${member.id}" target="_jeesnsOpen" title="私信" height="285px">
+                            <a class="label label-primary" href="${basePath}/member/sendMessageBox?mid=${member.id}" target="_muyeOpen" title="私信" height="285px">
                                 <i class="fa fa-comments"></i> 私信
                             </a>
                         </p>
@@ -200,7 +200,7 @@
 <#include "/member/common/footer.ftl"/>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
         mem.isFollowed(${member.id}, "${basePath}");
         $(".member-follows").click(function () {
             mem.follows($(this), "${basePath}")

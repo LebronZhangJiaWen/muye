@@ -1,6 +1,6 @@
 ;(function($){
     $.fn.extend({
-        "jeesns_page":function(form){
+        "muye_page":function(form){
             var $this=this;
             //定义分页结构体
             var pageinfo={

@@ -18,7 +18,7 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
 </head>
 <body class="gray-bg">
@@ -39,9 +39,9 @@
                             <span class="text-right">
                                 <#if isfollow == true>
                                     <a title="取消关注" href="${basePath}/group/nofollow/${group.id}"
-                                       target="_jeesnsLink"><i class="icon-minus"></i> 取消关注</a>
+                                       target="_muyeLink"><i class="icon-minus"></i> 取消关注</a>
                                 <#else>
-                                    <a title="添加关注" href="${basePath}/group/follow/${group.id}" target="_jeesnsLink"><i
+                                    <a title="添加关注" href="${basePath}/group/follow/${group.id}" target="_muyeLink"><i
                                             class="icon-plus"></i> 关注</a>
                                 </#if>
                                 <#if loginUser?? && loginUser.id == group.creator>
@@ -144,7 +144,7 @@
 <#include "/${frontTemplate}/common/footer.ftl"/>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
     });
 </script>
 </body>

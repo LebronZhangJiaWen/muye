@@ -27,7 +27,7 @@
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/jquery.masonry.min.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script src="${basePath}/res/front/js/picture.js"></script>
 </head>
 

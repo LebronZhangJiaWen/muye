@@ -21,14 +21,14 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 </head>
 <body class="hold-transition">
 <div class="wrapper">
     <section class="content">
         <div class="row">
             <div class="col-md-12">
-                <form method="post" action="${managePath}/system/action/update" class="jeesns_form">
+                <form method="post" action="${managePath}/system/action/update" class="muye_form">
                     <div class="box-body">
                         <input type="hidden" class="form-control" name="id" value="${action.id}">
                         <div class="form-group">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-1 col-sm-10">
-                                <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                                <button type="submit" class="btn btn-info muye-submit">保存</button>
                             </div>
                         </div>
                     </div>

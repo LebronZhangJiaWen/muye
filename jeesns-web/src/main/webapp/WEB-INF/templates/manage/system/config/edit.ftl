@@ -23,7 +23,7 @@
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/webuploader/webuploader.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script type="text/javascript">
         var basePath = "${basePath}";
         var uploadServer = "${managePath}/uploadImage";
@@ -56,7 +56,7 @@
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane active">
                         <div class="panel-body">
-                            <form class="form-horizontal jeesns_form" role="form" action="${managePath}/system/config/baseUpdate" method="post">
+                            <form class="form-horizontal muye_form" role="form" action="${managePath}/system/config/baseUpdate" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">网站名称</label>
                                     <div class="col-sm-8">
@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-1 col-sm-10">
-                                        <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                                        <button type="submit" class="btn btn-info muye-submit">保存</button>
                                     </div>
                                 </div>
                             </form>
@@ -150,7 +150,7 @@
                     </div>
                     <div id="tab-2" class="tab-pane">
                         <div class="panel-body">
-                            <form class="form-horizontal jeesns_form" role="form" action="${managePath}/system/config/memberUpdate" method="post">
+                            <form class="form-horizontal muye_form" role="form" action="${managePath}/system/config/memberUpdate" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">会员登录</label>
                                     <div class="col-sm-8">
@@ -180,7 +180,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-1 col-sm-10">
-                                        <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                                        <button type="submit" class="btn btn-info muye-submit">保存</button>
                                     </div>
                                 </div>
                             </form>
@@ -188,7 +188,7 @@
                     </div>
                     <div id="tab-3" class="tab-pane">
                         <div class="panel-body">
-                            <form class="form-horizontal jeesns_form" role="form" action="${managePath}/system/config/cmsUpdate" method="post">
+                            <form class="form-horizontal muye_form" role="form" action="${managePath}/system/config/cmsUpdate" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">文章投稿</label>
                                     <div class="col-sm-8">
@@ -209,7 +209,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-1 col-sm-10">
-                                        <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                                        <button type="submit" class="btn btn-info muye-submit">保存</button>
                                     </div>
                                 </div>
                             </form>
@@ -217,7 +217,7 @@
                     </div>
                     <div id="tab-4" class="tab-pane">
                         <div class="panel-body">
-                            <form class="form-horizontal jeesns_form" role="form" action="${managePath}/system/config/weiboUpdate" method="post">
+                            <form class="form-horizontal muye_form" role="form" action="${managePath}/system/config/weiboUpdate" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">微博别名</label>
                                     <div class="col-sm-8">
@@ -241,7 +241,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-1 col-sm-10">
-                                        <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                                        <button type="submit" class="btn btn-info muye-submit">保存</button>
                                     </div>
                                 </div>
                             </form>
@@ -249,7 +249,7 @@
                     </div>
                     <div id="tab-5" class="tab-pane">
                         <div class="panel-body">
-                            <form class="form-horizontal jeesns_form" role="form" action="${managePath}/system/config/groupUpdate" method="post">
+                            <form class="form-horizontal muye_form" role="form" action="${managePath}/system/config/groupUpdate" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">群组别名</label>
                                     <div class="col-sm-8">
@@ -276,7 +276,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-1 col-sm-10">
-                                        <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                                        <button type="submit" class="btn btn-info muye-submit">保存</button>
                                     </div>
                                 </div>
                             </form>

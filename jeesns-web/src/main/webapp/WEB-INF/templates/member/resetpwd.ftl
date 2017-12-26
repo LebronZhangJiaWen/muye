@@ -10,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link href="${basePath}/res/common/css/jeesns.css" rel="stylesheet">
+    <link href="${basePath}/res/common/css/muye.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -22,7 +22,7 @@
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/manage.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 
 </head>
 
@@ -34,7 +34,7 @@
         <div class="col-md-4">
             <div class="ibox-content">
                 <h2 class="font-bold">重置密码</h2>
-                <form class="m-t jeesns_form" action="${basePath}/member/resetpwd" method="post">
+                <form class="m-t muye_form" action="${basePath}/member/resetpwd" method="post">
                     <input name="email" class="form-control" type="hidden" value="${email}">
                     <input name="token" class="form-control" type="hidden" value="${token}">
                     <div class="form-group">

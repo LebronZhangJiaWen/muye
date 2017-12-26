@@ -9,8 +9,8 @@
     <meta name="author" content="MUYE"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link href="${basePath}/res/common/css/jeesns.css" rel="stylesheet">
-    <link href="${basePath}/res/common/css/jeesns-skin.css" rel="stylesheet">
+    <link href="${basePath}/res/common/css/muye.css" rel="stylesheet">
+    <link href="${basePath}/res/common/css/muye-skin.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -19,7 +19,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script>
         var loginMemberId = ${loginUser.id};
         var base = "${basePath}";

@@ -22,7 +22,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -81,21 +81,21 @@
                                     <td>${member.createTime?string("yyyy-MM-dd HH:mm:ss")}</td>
                                     <td>
                                         <#if member.status=-1>
-                                        <a class="marg-l-5" target="_jeesnsLink" href="${managePath}/member/isenable/${member.id}" confirm="确定要启用会员吗？">
+                                        <a class="marg-l-5" target="_muyeLink" href="${managePath}/member/isenable/${member.id}" confirm="确定要启用会员吗？">
                                             <span class="label label-danger">禁用</span>
                                         </a>
                                         <#else>
-                                        <a class="marg-l-5" target="_jeesnsLink" href="${managePath}/member/isenable/${member.id}" confirm="确定要禁用会员吗？">
+                                        <a class="marg-l-5" target="_muyeLink" href="${managePath}/member/isenable/${member.id}" confirm="确定要禁用会员吗？">
                                             <span class="label label-success">启用</span>
                                         </a>
                                         </#if>
                                     </td>
                                     <td>
-                                        <a href="${managePath}/member/changepwd/${member.id}" target="_jeesnsOpen"
+                                        <a href="${managePath}/member/changepwd/${member.id}" target="_muyeOpen"
                                            title="修改密码" width="400px" height="300px">
                                             <span class="label label-info">修改密码</span>
                                         </a>
-                                        <a class="marg-l-5" target="_jeesnsLink"
+                                        <a class="marg-l-5" target="_muyeLink"
                                            href="${managePath}/member/delete/${member.id}" confirm="确定要删除会员吗？">
                                             <span class="label label-danger"><i class="fa fa-trash red"></i></span>
                                         </a>
@@ -121,7 +121,7 @@
 </div>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
     });
 </script>
 </body>

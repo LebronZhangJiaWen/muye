@@ -390,7 +390,7 @@ jQuery(function() {
     });
 
     picUploader.onError = function( code ) {
-        jeesnsDialog.errorTips( 'Eroor: ' + code );
+        muyeDialog.errorTips( 'Eroor: ' + code );
     };
 
     picUploader.on( 'uploadSuccess', function( file , response) {
@@ -404,7 +404,7 @@ jQuery(function() {
             }
             $("#weibo-pictures").val(weiboPictures);
         }else {
-            jeesnsDialog.errorTips(json.message);
+            muyeDialog.errorTips(json.message);
         }
     });
 

@@ -8,12 +8,12 @@ $(document).ready(function () {
     listContactMembers();
     $(".sendMessage").on("click", function () {
         if(memberid == -1){
-            jeesnsDialog.errorTips("请先选择发送的对象");
+            muyeDialog.errorTips("请先选择发送的对象");
             return;
         }
         var content = $("#content").val();
         if (content == "") {
-            jeesnsDialog.errorTips("请输入私信内容");
+            muyeDialog.errorTips("请输入私信内容");
             return;
         }
         $.ajax({
@@ -27,20 +27,20 @@ $(document).ready(function () {
             dataType: "json",
             timeout: 5000,
             beforeSend: function () {
-                index = jeesnsDialog.loading();
+                index = muyeDialog.loading();
             },
             error: function () {
-                jeesnsDialog.close(index);
-                jeesnsDialog.errorTips("请求失败")
+                muyeDialog.close(index);
+                muyeDialog.errorTips("请求失败")
             },
             success: function (res) {
-                jeesnsDialog.close(index);
+                muyeDialog.close(index);
                 if (res.code == 0) {
-                    jeesnsDialog.successTips(res.message);
+                    muyeDialog.successTips(res.message);
                     messageRecords(1,1);
                     $("#content").val("");
                 } else {
-                    jeesnsDialog.errorTips(res.message);
+                    muyeDialog.errorTips(res.message);
                 }
             }
         });
@@ -83,7 +83,7 @@ function messageRecords(autoScroll,regain) {
             dataType: "json",
             timeout: 5000,
             error: function () {
-                jeesnsDialog.errorTips("私信记录获取失败，请刷新重试")
+                muyeDialog.errorTips("私信记录获取失败，请刷新重试")
             },
             success: function (res) {
                 //重新获取联系人列表
@@ -160,7 +160,7 @@ function listContactMembers(autoRefresh) {
         dataType: "json",
         timeout: 5000,
         error: function () {
-            jeesnsDialog.errorTips("联系人获取失败，请刷新重试")
+            muyeDialog.errorTips("联系人获取失败，请刷新重试")
         },
         success: function (res) {
             if (res.code == 0) {

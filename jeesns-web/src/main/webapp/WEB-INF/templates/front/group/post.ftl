@@ -17,7 +17,7 @@
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script src="${basePath}/res/plugins/webuploader/webuploader.min.js"></script>
     <script src="${basePath}/res/plugins/ckeditor/ckeditor.js"></script>
     <script type="text/javascript">
@@ -35,7 +35,7 @@
     <div class="main-content">
         <div class="row">
             <div class="col-md-12 article-detail">
-                <form class="form-horizontal jeesns_form" role="form" action="${basePath}/group/post" method="post" onsubmit="ckUpdate();">
+                <form class="form-horizontal muye_form" role="form" action="${basePath}/group/post" method="post" onsubmit="ckUpdate();">
                     <input type="hidden" name="groupId" value="${group.id}">
                     <div class="form-group">
                         <label class="col-sm-1 control-label">标题</label>
@@ -71,8 +71,8 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-1 col-sm-10">
-                            <button type="submit" class="btn btn-info jeesns-submit">保存</button>
-                            <a href="/article/list" class="btn btn-default jeesns-submit">取消</a>
+                            <button type="submit" class="btn btn-info muye-submit">保存</button>
+                            <a href="/article/list" class="btn btn-default muye-submit">取消</a>
                         </div>
                     </div>
                 </form>

@@ -21,11 +21,11 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
 </head>
 <body>
 <div class="container">
-    <form class="form-horizontal jeesns_form" role="form" action="${basePath}/member/picture/saveAlbum" method="post">
+    <form class="form-horizontal muye_form" role="form" action="${basePath}/member/picture/saveAlbum" method="post">
         <div class="form-group">
             <label class="col-sm-1 control-label">相册名称</label>
             <div class="col-sm-8">
@@ -56,7 +56,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-1 col-sm-10">
-                <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                <button type="submit" class="btn btn-info muye-submit">保存</button>
             </div>
         </div>
     </form>

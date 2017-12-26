@@ -47,7 +47,7 @@ h5 {
   margin-top: 5px;
 }
 
-.jeesns-logo {
+.muye-logo {
   padding: 0;
   margin-top: -7px;
 }
@@ -527,7 +527,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 .pace-done .navbar-static-side,
 .pace-done .nav-header,
 .pace-done li.active,
-.pace-done #jeesns-wrapper,
+.pace-done #muye-wrapper,
 .pace-done .footer {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -535,10 +535,10 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
   transition: all 0.4s;
 }
 body.fixed-nav #wrapper .navbar-static-side,
-body.fixed-nav #wrapper #jeesns-wrapper {
+body.fixed-nav #wrapper #muye-wrapper {
   margin-top: 60px;
 }
-body.top-navigation.fixed-nav #wrapper #jeesns-wrapper {
+body.top-navigation.fixed-nav #wrapper #muye-wrapper {
   margin-top: 0;
 }
 body.fixed-nav.fixed-nav-basic .navbar-fixed-top {
@@ -595,14 +595,14 @@ body.mini-navbar .nav-header {
 body.canvas-menu .nav-header {
   padding: 33px 25px;
 }
-body.mini-navbar #jeesns-wrapper {
+body.mini-navbar #muye-wrapper {
   margin: 0 0 0 70px;
 }
 body.fixed-sidebar.mini-navbar .footer,
 body.canvas-menu.mini-navbar .footer {
   margin: 0 0 0 0 !important;
 }
-body.canvas-menu.mini-navbar #jeesns-wrapper,
+body.canvas-menu.mini-navbar #muye-wrapper,
 body.canvas-menu.mini-navbar .footer {
   margin: 0 0 0 0;
 }
@@ -616,10 +616,10 @@ body.canvas-menu .navbar-static-side {
 body.fixed-sidebar.mini-navbar .navbar-static-side {
   width: 0;
 }
-body.fixed-sidebar.mini-navbar #jeesns-wrapper {
+body.fixed-sidebar.mini-navbar #muye-wrapper {
   margin: 0 0 0 0;
 }
-body.body-small.fixed-sidebar.mini-navbar #jeesns-wrapper {
+body.body-small.fixed-sidebar.mini-navbar #muye-wrapper {
   margin: 0 0 0 220px;
 }
 body.body-small.fixed-sidebar.mini-navbar .navbar-static-side {
@@ -684,7 +684,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   display: block;
   width: 220px;
 }
-.top-navigation #jeesns-wrapper {
+.top-navigation #muye-wrapper {
   margin-left: 0;
 }
 .top-navigation .navbar-nav .dropdown-menu > .active > a {
@@ -737,11 +737,11 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .top-navigation .navbar-top-links li:last-child {
   margin-right: 0;
 }
-.top-navigation.mini-navbar #jeesns-wrapper,
-.top-navigation.body-small.fixed-sidebar.mini-navbar #jeesns-wrapper,
-.mini-navbar .top-navigation #jeesns-wrapper,
-.body-small.fixed-sidebar.mini-navbar .top-navigation #jeesns-wrapper,
-.canvas-menu #jeesns-wrapper {
+.top-navigation.mini-navbar #muye-wrapper,
+.top-navigation.body-small.fixed-sidebar.mini-navbar #muye-wrapper,
+.mini-navbar .top-navigation #muye-wrapper,
+.body-small.fixed-sidebar.mini-navbar .top-navigation #muye-wrapper,
+.canvas-menu #muye-wrapper {
   margin: 0;
 }
 .top-navigation.fixed-nav #wrapper,
@@ -1911,10 +1911,10 @@ body {
   height: 100%;
 }
 body.full-height-layout #wrapper,
-body.full-height-layout #jeesns-wrapper {
+body.full-height-layout #muye-wrapper {
   height: 100%;
 }
-#jeesns-wrapper {
+#muye-wrapper {
   min-height: auto;
 }
 
@@ -1988,13 +1988,13 @@ a:focus {
   padding: 0px 0px 30px 0px;
   height: calc(100% - 70px);
 }
-#jeesns-wrapper {
+#muye-wrapper {
   /*padding: 0 5px 0 10px;*/
   min-height: 568px;
   position: relative !important;
 }
 @media (min-width: 768px) {
-  #jeesns-wrapper {
+  #muye-wrapper {
     position: inherit;
     margin: 0 0 0 240px;
     min-height: 100%;
@@ -2932,7 +2932,7 @@ del {
 }
 
 @media (min-width: 768px) {
-  #jeesns-wrapper {
+  #muye-wrapper {
     position: inherit;
     margin: 0 0 0 180px;
     min-height: 100%;
@@ -2950,7 +2950,7 @@ del {
   }
 }
 @media (max-width: 768px) {
-  #jeesns-wrapper {
+  #muye-wrapper {
     position: inherit;
     margin: 0 0 0 0;
     min-height: 100%;

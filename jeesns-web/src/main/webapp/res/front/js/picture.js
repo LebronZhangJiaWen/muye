@@ -105,7 +105,7 @@ var picture = {
                                 zan += "<i class=\"icon-thumbs-up\"></i> ";
                             }
                             zan += picture.favorCount+"</a>";
-                            html += "<li class=\"item\"><a href=\""+basePath+"/picture/detail/"+picture.pictureId+"\" class=\"picture\" target=\"_jeesnsOpen\" title=\"\" height=\"680px\" width=\"1200px\"><img src=\""+basePath + picture.path + "\"></a>" +
+                            html += "<li class=\"item\"><a href=\""+basePath+"/picture/detail/"+picture.pictureId+"\" class=\"picture\" target=\"_muyeOpen\" title=\"\" height=\"680px\" width=\"1200px\"><img src=\""+basePath + picture.path + "\"></a>" +
                                 "<p class=\"description\">" + picture.description + "</p><div class=\"qianm clearfloat\"><span class=\"sp1\"><a href='"+basePath+"/u/"+picture.member.id+"' target='_blank'>" +picture.member.name+"</a><b>"+zan+"</b></span>" +
                                 "<span class=\"sp2\">" + picture.createTime + "</span></div></li>";
                         }
@@ -119,8 +119,8 @@ var picture = {
                             loading.data("on", true).fadeOut();
                         });
                         pageNo++;
-                        $('a[target="_jeesnsOpen"]').unbind();
-                        jeesns.jeesnsLink();
+                        $('a[target="_muyeOpen"]').unbind();
+                        muye.muyeLink();
                         $(".picture-favor").unbind();
                         $(".picture-favor").bind("click",function () {
                             favor($(this))
@@ -140,7 +140,7 @@ var picture = {
                 timeout: 5000,
                 success: function (res) {
                     if (res.code < 0) {
-                        jeesnsDialog.errorTips(res.message);
+                        muyeDialog.errorTips(res.message);
                     } else {
                         if (res.code == 0) {
                             _this.html("<i class='icon icon-thumbs-up'></i> " + res.data);
@@ -159,7 +159,7 @@ var picture = {
     comment: function () {
         var content = $("#content").val();
         if (content == ""){
-            jeesnsDialog.tips("请输入内容");
+            muyeDialog.tips("请输入内容");
             return;
         }
         var index;
@@ -168,24 +168,24 @@ var picture = {
             timeout : 20000,
             beforeSubmit : function (){
                 $(":submit").attr("disabled","disabled");
-                index = jeesnsDialog.loading();
+                index = muyeDialog.loading();
             },
             error:function(){
-                jeesnsDialog.close(index);
+                muyeDialog.close(index);
                 $(":submit").removeAttr("disabled");
-                jeesnsDialog.tips('请求失败 ！');
+                muyeDialog.tips('请求失败 ！');
             },
             success:function(res){
-                jeesnsDialog.close(index);
+                muyeDialog.close(index);
                 if(res.code==0){
                     $("#content").val("");
                     $(":submit").removeAttr("disabled");
-                    jeesnsDialog.successTips(res.message);
+                    muyeDialog.successTips(res.message);
                     pageNo = 1;
                     picture.commentList();
                 }else{
                     $(":submit").removeAttr("disabled");
-                    jeesnsDialog.errorTips(res.message);
+                    muyeDialog.errorTips(res.message);
                 }
             }
         };
@@ -237,7 +237,7 @@ var picture = {
             timeout: 5000,
             success: function (res) {
                 if (res.code < 0) {
-                    jeesnsDialog.errorTips(res.message);
+                    muyeDialog.errorTips(res.message);
                 } else {
                     if (res.code == 0) {
                         _this.html("<i class='icon icon-thumbs-up'></i> " + res.data);

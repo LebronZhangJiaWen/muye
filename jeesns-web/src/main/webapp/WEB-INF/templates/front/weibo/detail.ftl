@@ -24,7 +24,7 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script src="${basePath}/res/plugins/js-emoji/emoji.js"></script>
     <script src="${basePath}/res/common/js/jquery.timeago.js"></script>
     <script src="${basePath}/res/plugins/gallery/js/jquery.blueimp-gallery.min.js"></script>
@@ -73,7 +73,7 @@
                                     class="icon icon-thumbs-up"></i> ${weibo.favor}</a>
                         </#if>
                         <#if loginUser?? && (loginUser.id == weibo.member.id || loginUser.isAdmin &gt; 0)>
-                            <a href="${basePath}/weibo/delete/${weibo.id}" target="_jeesnsLink" confirm="确定要删除微博吗？">删除</a>
+                            <a href="${basePath}/weibo/delete/${weibo.id}" target="_muyeLink" confirm="确定要删除微博吗？">删除</a>
                         </#if>
                         </div>
                     </div>
@@ -85,13 +85,13 @@
                     <div class="panel-heading">评论(${weibo.commentCount})</div>
                     <header>
                         <div class="reply-form">
-                            <form class="form-horizontal jeesns_form" action="${basePath}/weibo/comment/${weibo.id}" method="post">
+                            <form class="form-horizontal muye_form" action="${basePath}/weibo/comment/${weibo.id}" method="post">
                                 <div class="form-group">
                                     <textarea name="content" class="form-control new-comment-text" rows="2" id="weibo-content" maxlength="${WEIBO_POST_MAXCONTENT}"></textarea>
                                 </div>
                                 <div class="form-group comment-user">
                                     <span id="weibo-words" class="mg-r-5">0/${WEIBO_POST_MAXCONTENT}</span>
-                                    <input type="submit" value="评论" class="pull-right btn btn-primary mg-t-10 jeesns-submit">
+                                    <input type="submit" value="评论" class="pull-right btn btn-primary mg-t-10 muye-submit">
                                 </div>
                             </form>
                         </div>

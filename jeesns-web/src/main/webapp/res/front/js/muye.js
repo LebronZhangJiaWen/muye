@@ -2,12 +2,12 @@
  * Created by zchuanzhao on 2016/10/13.
  */
 $(function () {
-    jeesns.submitForm();
-    jeesns.jeesnsLink();
-    jeesnsDialog.message();
+    muye.submitForm();
+    muye.muyeLink();
+    muyeDialog.message();
 });
 
-var jeesns = {
+var muye = {
     reg_rule : {
         'selected'   :    /.+/,
         'require'    :    /.+/,
@@ -39,20 +39,20 @@ var jeesns = {
             timeout : 20000,
             beforeSubmit : function (){
                 $(":submit").attr("disabled","disabled");
-                // form.find('.jeesns-submit').attr("disabled","disabled");
-                index = jeesnsDialog.loading();
+                // form.find('.muye-submit').attr("disabled","disabled");
+                index = muyeDialog.loading();
             },
             error:function(res){
-                jeesnsDialog.close(index);
+                muyeDialog.close(index);
                 $(":submit").removeAttr("disabled");
-                // form.find('.jeesns-submit').removeAttr("disabled");
-                jeesnsDialog.tips('请求失败 ！');
+                // form.find('.muye-submit').removeAttr("disabled");
+                muyeDialog.tips('请求失败 ！');
             },
             success:function(res){
-                jeesnsDialog.close(index);
+                muyeDialog.close(index);
                 if(res.code==0){
                     $(":submit").removeAttr("disabled");
-                    jeesnsDialog.successTips(res.message);
+                    muyeDialog.successTips(res.message);
                 }else if(res.code==1){
                     localStorage.setItem("message",res.message);
                     window.location.href=window.location.href;
@@ -64,13 +64,13 @@ var jeesns = {
                     window.parent.location.reload();
                 }else if(res.code==-1){
                     $(":submit").removeAttr("disabled");
-                    jeesnsDialog.errorTips(res.message);
+                    muyeDialog.errorTips(res.message);
                 }else{
                     $(":submit").removeAttr("disabled");
-                    jeesnsDialog.tips(res.message);
+                    muyeDialog.tips(res.message);
                 }
                 // $(":submit").removeAttr("disabled");
-                // form.find('.jeesns-submit').removeAttr("disabled");
+                // form.find('.muye-submit').removeAttr("disabled");
             }
         };
         return options;
@@ -78,14 +78,14 @@ var jeesns = {
     submitForm : function(form){
         if(arguments[0]){//如果传入了form，马上对form进行ajax提交
             var form = typeof(form)=='object' ? $(form) : $('#'+form);
-            if(jeesns.checkForm(form)==false) return false;
+            if(muye.checkForm(form)==false) return false;
             var options = getOptions();
             form.ajaxSubmit(options);
-        }else{//否则，对标志有class="jeesns_form"的表单进行ajax提交的绑定操作
-            $('.jeesns_form').bind('submit',function(){
+        }else{//否则，对标志有class="muye_form"的表单进行ajax提交的绑定操作
+            $('.muye_form').bind('submit',function(){
                 var form = $(this);
-                if(jeesns.checkForm(form)==false) return false;
-                var options = jeesns.getOptions();
+                if(muye.checkForm(form)==false) return false;
+                var options = muye.getOptions();
                 form.ajaxSubmit(options);
                 return false;
             });
@@ -111,7 +111,7 @@ var jeesns = {
                         var equalid = rule.substring(rule.indexOf("[")+1,rule.indexOf("]"));
                         var equalValue = $("#"+equalid).val();
                         if(val != equalValue){
-                            jeesnsDialog.errorTips(alt);
+                            muyeDialog.errorTips(alt);
                             $(this).focus();
                             check = false;
                             return false;
@@ -123,16 +123,16 @@ var jeesns = {
                     var types = type.split(",");
                     for (var i=0;i<types.length;i++){
                         type = types[i];
-                        if(!jeesns.reg_rule[type].test(val)){
-                            jeesnsDialog.errorTips(alt+jeesns.reg_rule_msg[type]);
+                        if(!muye.reg_rule[type].test(val)){
+                            muyeDialog.errorTips(alt+muye.reg_rule_msg[type]);
                             $(this).focus();
                             check = false;
                             return false;
                         }
                     }
                 }else{
-                    if(!jeesns.reg_rule[type].test(val)){
-                        jeesnsDialog.errorTips(alt+jeesns.reg_rule_msg[type]);
+                    if(!muye.reg_rule[type].test(val)){
+                        muyeDialog.errorTips(alt+muye.reg_rule_msg[type]);
                         $(this).focus();
                         check = false;
                         return false;
@@ -143,21 +143,21 @@ var jeesns = {
         return check;
     },
 
-    jeesnsLink : function (){
-        $('a[target="_jeesnsLink"]').on('click',function() {
+    muyeLink : function (){
+        $('a[target="_muyeLink"]').on('click',function() {
             var url = $(this).attr('href');
             var title = $(this).attr('confirm');
             if (title) {
-                jeesnsDialog.confirm(title, function () {
-                    jeesns.jeesnsAjax(url,"GET",null);
+                muyeDialog.confirm(title, function () {
+                    muye.muyeAjax(url,"GET",null);
                 });
             }else {
-                jeesns.jeesnsAjax(url,"GET",null);
+                muye.muyeAjax(url,"GET",null);
             }
             return false;
         });
 
-        $('a[target="_jeesnsOpen"]').on('click',function() {
+        $('a[target="_muyeOpen"]').on('click',function() {
             var url = $(this).attr('href');
             var title = $(this).attr('title');
             var text = $(this).text();
@@ -172,12 +172,12 @@ var jeesns = {
             if(height == undefined || height == ""){
                 height = "300px";
             }
-            jeesnsDialog.open(url,title,width,height);
+            muyeDialog.open(url,title,width,height);
             return false;
         });
     },
 
-    jeesnsAjax : function(url,type,data){
+    muyeAjax : function(url,type,data){
         var index;
         $.ajax({
             url: url,
@@ -187,18 +187,18 @@ var jeesns = {
             dataType: "json",
             timeout: 20000,
             beforeSend: function(){
-                index = jeesnsDialog.loading();
+                index = muyeDialog.loading();
             },
             error: function(){
-                jeesnsDialog.close(index);
-                jeesnsDialog.errorTips("请求失败")
+                muyeDialog.close(index);
+                muyeDialog.errorTips("请求失败")
             },
             success:function(res){
-                jeesnsDialog.close(index);
+                muyeDialog.close(index);
                 if(res.code == 0){
-                    jeesnsDialog.successTips(res.message);
+                    muyeDialog.successTips(res.message);
                 }else if(res.code == -1){
-                    jeesnsDialog.errorTips(res.message)
+                    muyeDialog.errorTips(res.message)
                 }else if(res.code==1){
                     localStorage.setItem("message",res.message);
                     window.location.href=window.location.href;
@@ -209,14 +209,14 @@ var jeesns = {
                     localStorage.setItem("message",res.message);
                     parent.window.location.href=parent.window.location.href;
                 }else{
-                    jeesnsDialog.tips(res.message);
+                    muyeDialog.tips(res.message);
                 }
             }
         });
     }
 };
 
-var jeesnsDialog = {
+var muyeDialog = {
     loading : function () {
         //加载层
         return parent.layer.load(0);
@@ -237,7 +237,7 @@ var jeesnsDialog = {
     confirm : function(msg,confirmFun) {
         parent.layer.confirm(msg, function(){
             confirmFun();
-            jeesnsDialog.closeAll();
+            muyeDialog.closeAll();
         }, function(){
 
         });
@@ -270,11 +270,11 @@ var jeesnsDialog = {
     },
 
     errorTips : function(msg) {
-        jeesnsDialog.tips(msg,"error");
+        muyeDialog.tips(msg,"error");
     },
 
     successTips : function(msg) {
-        jeesnsDialog.tips(msg, "success");
+        muyeDialog.tips(msg, "success");
     },
 
     open : function (url,title,width,height) {
@@ -290,7 +290,7 @@ var jeesnsDialog = {
     },
     message: function () {
         if (localStorage.message != undefined){
-            jeesnsDialog.successTips(localStorage.message);
+            muyeDialog.successTips(localStorage.message);
             localStorage.removeItem("message");
         }
     }

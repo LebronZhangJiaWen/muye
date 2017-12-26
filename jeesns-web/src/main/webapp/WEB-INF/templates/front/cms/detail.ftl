@@ -18,7 +18,7 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script>
         var base = "${basePath}";
         var articleId = ${article.id};
@@ -54,7 +54,7 @@
                                         <#if loginUser.id == article.memberId>
                                             <li><a href="${basePath}/article/edit/${article.id}">编辑</a></li>
                                         </#if>
-                                        <li><a href="${basePath}/article/delete/${article.id}" confirm="确定要删除文章吗？" target="_jeesnsLink">删除</a></li>
+                                        <li><a href="${basePath}/article/delete/${article.id}" confirm="确定要删除文章吗？" target="_muyeLink">删除</a></li>
 
                                     </ul>
                                 </div>
@@ -86,7 +86,7 @@
                     <div class="panel-heading">文章评论</div>
                     <header>
                         <div class="reply-form">
-                            <form class="form-horizontal jeesns_form" action="${basePath}/article/comment/${article.id}"
+                            <form class="form-horizontal muye_form" action="${basePath}/article/comment/${article.id}"
                                   method="post">
                                 <div class="form-group">
                                     <textarea name="content" class="form-control new-comment-text" rows="2"
@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="form-group comment-user">
                                     <input type="submit" value="评论"
-                                           class="pull-right btn btn-primary mg-t-10 jeesns-submit">
+                                           class="pull-right btn btn-primary mg-t-10 muye-submit">
                                 </div>
                             </form>
                         </div>

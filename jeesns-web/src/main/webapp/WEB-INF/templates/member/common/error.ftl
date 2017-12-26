@@ -11,7 +11,7 @@
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/animate.min.css" rel="stylesheet">
     <link href="${basePath}/res/plugins/layer/skin/layer.css" rel="stylesheet">
-    <link href="${basePath}/res/common/css/jeesns1.css" rel="stylesheet">
+    <link href="${basePath}/res/common/css/muye1.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -22,11 +22,11 @@
     <script src="${basePath}/res/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="${basePath}/res/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 
 </head>
 
-<div class="container jeesns-dialog">
+<div class="container muye-dialog">
     <div class="row">
         <div class="col-sm-12">
            ${msg}

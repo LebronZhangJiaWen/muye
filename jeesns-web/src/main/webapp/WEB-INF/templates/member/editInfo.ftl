@@ -9,8 +9,8 @@
     <meta name="author" content="MUYE"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="${basePath}/res/common/css/jeesns.css">
-    <link rel="stylesheet" href="${basePath}/res/common/css/jeesns-skin.css">
+    <link rel="stylesheet" href="${basePath}/res/common/css/muye.css">
+    <link rel="stylesheet" href="${basePath}/res/common/css/muye-skin.css">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -19,7 +19,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/plugins/My97DatePicker/WdatePicker.js"></script>
 </head>
 
@@ -41,7 +41,7 @@
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane active">
                             <div class="panel-body">
-                                <form class="form-horizontal m-t jeesns_form" action="${basePath}/member/editBaseInfo"
+                                <form class="form-horizontal m-t muye_form" action="${basePath}/member/editBaseInfo"
                                       method="post">
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label">登录账号：</label>
@@ -89,7 +89,7 @@
                         </div>
                         <div id="tab-2" class="tab-pane">
                             <div class="panel-body">
-                                <form class="form-horizontal m-t jeesns_form"
+                                <form class="form-horizontal m-t muye_form"
                                       action="${basePath}/member/editOtherInfo" method="post">
                                     <input name="id" class="form-control" type="hidden" dataType=""
                                            value="${loginUser.id}">
@@ -138,7 +138,7 @@
                                     <div class="form-group">
                                         <div class="col-sm-8 col-sm-offset-2">
                                             <input type="submit"
-                                                   class="btn btn-primary block full-width m-b jeesns-submit"
+                                                   class="btn btn-primary block full-width m-b muye-submit"
                                                    value="修改">
                                         </div>
                                     </div>

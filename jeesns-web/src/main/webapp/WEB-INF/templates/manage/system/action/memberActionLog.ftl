@@ -22,7 +22,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -87,7 +87,7 @@
 </div>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
     });
 </script>
 </body>

@@ -10,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link href="${basePath}/res/common/css/jeesns.css" rel="stylesheet">
+    <link href="${basePath}/res/common/css/muye.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -22,7 +22,7 @@
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/manage.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 
 </head>
 
@@ -34,7 +34,7 @@
         <div class="col-md-4">
             <div class="ibox-content">
                 <h2 class="font-bold">激活账号</h2>
-                <form class="m-t jeesns_form" action="${basePath}/member/active" method="post">
+                <form class="m-t muye_form" action="${basePath}/member/active" method="post">
                     <div class="form-group">
                         邮箱
                         <input type="text" class="form-control" disabled data-type="require" value="${loginUser.email}">
@@ -64,18 +64,18 @@
                 type:"get",
                 dataType:"json",
                 beforeSend: function(){
-                    index = jeesnsDialog.loading();
+                    index = muyeDialog.loading();
                 },
                 error: function(){
-                    jeesnsDialog.close(index);
-                    jeesnsDialog.errorTips("请求失败");
+                    muyeDialog.close(index);
+                    muyeDialog.errorTips("请求失败");
                 },
                 success:function(res){
-                    jeesnsDialog.close(index);
+                    muyeDialog.close(index);
                     if(res.code == 0){
-                        jeesnsDialog.successTips(res.message);
+                        muyeDialog.successTips(res.message);
                     }else {
-                        jeesnsDialog.errorTips(res.message);
+                        muyeDialog.errorTips(res.message);
                     }
                     window.sendSmsID;
                     window.curCount = 60;//当前剩余秒数

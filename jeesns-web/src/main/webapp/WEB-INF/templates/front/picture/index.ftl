@@ -23,7 +23,7 @@
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/jquery.masonry.min.js"></script>
     <script src="${basePath}/res/common/js/jqeasing.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script src="${basePath}/res/front/js/picture.js"></script>
 </head>
 
@@ -34,7 +34,7 @@
         <ul id="pictures">
             <#list model.data as picture>
                 <li class="item">
-                    <a href="${basePath}/picture/detail/${picture.pictureId}" class="picture" target="_jeesnsOpen" title="" height="90%" width="90%">
+                    <a href="${basePath}/picture/detail/${picture.pictureId}" class="picture" target="_muyeOpen" title="" height="90%" width="90%">
                         <img src="${basePath}${picture.smallPath}">
                     </a>
                     <p class="description">${picture.description}</p>

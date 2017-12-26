@@ -18,7 +18,7 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
 </head>
 <body class="gray-bg">
@@ -103,7 +103,7 @@
 <#include "/${frontTemplate}/common/footer.ftl"/>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
     });
 </script>
 </body>

@@ -22,14 +22,14 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 </head>
 <body class="hold-transition">
 <div class="wrapper">
     <section class="content">
         <div class="row">
             <div class="col-md-12">
-                <form class="form-horizontal jeesns_form" role="form" action="${managePath}/tag/update" method="post">
+                <form class="form-horizontal muye_form" role="form" action="${managePath}/tag/update" method="post">
                     <input type="hidden" name="id" value="${tag.id}">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">名称</label>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-info jeesns-submit">保存</button>
+                            <button type="submit" class="btn btn-info muye-submit">保存</button>
                         </div>
                     </div>
                 </form>

@@ -9,8 +9,8 @@
     <meta name="author" content="MUYE"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="${basePath}/res/common/css/jeesns.css">
-    <link rel="stylesheet" href="${basePath}/res/common/css/jeesns-skin.css">
+    <link rel="stylesheet" href="${basePath}/res/common/css/muye.css">
+    <link rel="stylesheet" href="${basePath}/res/common/css/muye-skin.css">
     <!--[if lt IE 9]>
     <script src="${basePath}/res/common/js/html5shiv.min.js"></script>
     <script src="${basePath}/res/common/js/respond.min.js"></script>
@@ -19,7 +19,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
 </head>
 
 <body class="gray-bg">
@@ -31,7 +31,7 @@
             <h5>修改密码</h5>
         </div>
         <div class="ibox-content">
-            <form class="form-horizontal m-t jeesns_form" action="${basePath}/member/password" method="post">
+            <form class="form-horizontal m-t muye_form" action="${basePath}/member/password" method="post">
                 <div class="form-group">
                     <label class="col-sm-2 control-label">旧密码：</label>
                     <div class="col-sm-8">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <input type="submit" class="btn btn-primary block full-width m-b jeesns-submit" value="修改密码">
+                        <input type="submit" class="btn btn-primary block full-width m-b muye-submit" value="修改密码">
                     </div>
                 </div>
             </form>

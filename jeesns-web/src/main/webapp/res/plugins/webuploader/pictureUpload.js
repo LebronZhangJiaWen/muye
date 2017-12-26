@@ -393,15 +393,15 @@ jQuery(function() {
     });
 
     picUploader.onError = function( code ) {
-        jeesnsDialog.errorTips( 'Eroor: ' + code );
+        muyeDialog.errorTips( 'Eroor: ' + code );
     };
 
     picUploader.on( 'uploadSuccess', function( file , response) {
         var json = response;
         if(json.code == 0){
-            jeesnsDialog.successTips(json.message);
+            muyeDialog.successTips(json.message);
         }else {
-            jeesnsDialog.errorTips(json.message);
+            muyeDialog.errorTips(json.message);
         }
     });
 

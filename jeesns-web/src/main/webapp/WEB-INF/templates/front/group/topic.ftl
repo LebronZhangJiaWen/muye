@@ -18,7 +18,7 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script>
         var base = "${basePath}";
         var groupTopicId = ${groupTopic.id};
@@ -57,19 +57,19 @@
 
                                         <#if loginUser?? && loginUser.isAdmin &gt; 0>
                                             <#if groupTopic.isTop = 0>
-                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=1" target="_jeesnsLink">普通置顶</a></li>
-                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=2" target="_jeesnsLink">超级置顶</a></li>
+                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=1" target="_muyeLink">普通置顶</a></li>
+                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=2" target="_muyeLink">超级置顶</a></li>
                                             <#elseif groupTopic.isTop = 1>
-                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=0" target="_jeesnsLink">取消普通置顶</a></li>
-                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=2" target="_jeesnsLink">超级置顶</a></li>
+                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=0" target="_muyeLink">取消普通置顶</a></li>
+                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=2" target="_muyeLink">超级置顶</a></li>
                                             <#elseif groupTopic.isTop = 2>
-                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=0" target="_jeesnsLink">取消超级置顶</a></li>
-                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=1" target="_jeesnsLink">普通置顶</a></li>
+                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=0" target="_muyeLink">取消超级置顶</a></li>
+                                                <li><a href="${base}/group/topic/top/${groupTopic.id}?top=1" target="_muyeLink">普通置顶</a></li>
                                             </#if>
                                             <#if groupTopic.isEssence = 0>
-                                                <li><a href="${base}/group/topic/essence/${groupTopic.id}?essence=1" target="_jeesnsLink">精华</a></li>
+                                                <li><a href="${base}/group/topic/essence/${groupTopic.id}?essence=1" target="_muyeLink">精华</a></li>
                                             <#elseif groupTopic.isEssence = 1>
-                                                <li><a href="${base}/group/topic/essence/${groupTopic.id}?essence=0" target="_jeesnsLink">取消精华</a></li>
+                                                <li><a href="${base}/group/topic/essence/${groupTopic.id}?essence=0" target="_muyeLink">取消精华</a></li>
                                             </#if>
                                         </#if>
 
@@ -77,7 +77,7 @@
                                         <#if loginUser.id == groupTopic.memberId>
                                             <li><a href="${basePath}/group/topicEdit/${groupTopic.id}">编辑</a></li>
                                         </#if>
-                                        <li><a href="${basePath}/group/delete/${groupTopic.id}" confirm="确定要删除帖子吗？" target="_jeesnsLink">删除</a></li>
+                                        <li><a href="${basePath}/group/delete/${groupTopic.id}" confirm="确定要删除帖子吗？" target="_muyeLink">删除</a></li>
                                     </ul>
                                 </div>
                             </#if>
@@ -109,13 +109,13 @@
                     <div class="panel-heading">帖子评论</div>
                     <header>
                         <div class="reply-form">
-                            <form class="form-horizontal jeesns_form"
+                            <form class="form-horizontal muye_form"
                                   action="${basePath}/group/comment/${groupTopic.id}" method="post">
                                 <div class="form-group">
                                     <textarea name="content" class="form-control new-comment-text" rows="2" placeholder="撰写评论..."></textarea>
                                 </div>
                                 <div class="form-group comment-user">
-                                    <input type="submit" value="评论" class="pull-right btn btn-primary mg-t-10 jeesns-submit">
+                                    <input type="submit" value="评论" class="pull-right btn btn-primary mg-t-10 muye-submit">
                                 </div>
                             </form>
                         </div>
@@ -147,10 +147,10 @@
                             <span class="text-right">
                                 <#if isfollow == true>
                                     <a title="取消关注" href="${basePath}/group/nofollow/${groupTopic.group.id}"
-                                       target="_jeesnsLink"><i class="icon-minus"></i> 取消关注</a>
+                                       target="_muyeLink"><i class="icon-minus"></i> 取消关注</a>
                                 <#else>
                                     <a title="添加关注" href="${basePath}/group/follow/${groupTopic.group.id}"
-                                       target="_jeesnsLink"><i
+                                       target="_muyeLink"><i
                                             class="icon-plus"></i> 关注</a>
                                 </#if>
                                 <#if loginUser?? && loginUser.id == groupTopic.group.creator>

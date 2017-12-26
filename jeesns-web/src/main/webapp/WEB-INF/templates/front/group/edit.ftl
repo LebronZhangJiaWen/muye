@@ -17,7 +17,7 @@
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script src="${basePath}/res/plugins/webuploader/webuploader.min.js"></script>
     <script src="${basePath}/res/plugins/jquerytags/js/jquery.tags.js"></script>
     <script type="text/javascript">
@@ -32,7 +32,7 @@
     <div class="main-content">
         <div class="row">
             <div class="col-md-12 article-detail">
-                <form class="form-horizontal jeesns_form" role="form" action="${basePath}/group/update"
+                <form class="form-horizontal muye_form" role="form" action="${basePath}/group/update"
                       method="post">
                     <input type="hidden" class="form-control" id="id" name="id" value="${group.id}">
                     <div class="form-group">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-8">
-                            <button type="submit" class="btn btn-info jeesns-submit">修改</button>
+                            <button type="submit" class="btn btn-info muye-submit">修改</button>
                             <a class="btn btn-default" href="${basePath}/group/detail/${group.id}">返回</a>
                         </div>
                     </div>

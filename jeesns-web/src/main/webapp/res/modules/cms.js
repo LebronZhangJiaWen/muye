@@ -35,7 +35,7 @@ var cms = {
             timeout: 5000,
             success: function (res) {
                 if (res.code < 0) {
-                    jeesnsDialog.errorTips(res.message);
+                    muyeDialog.errorTips(res.message);
                 } else {
                     if (res.code == 0) {
                         _this.html("<i class='fa fa-heart'></i> 喜欢 " + res.data);

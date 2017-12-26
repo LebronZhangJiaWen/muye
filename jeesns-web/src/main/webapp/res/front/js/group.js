@@ -19,11 +19,11 @@ var group = {
                         html += "<pre><code><p>引用“<a href='"+base+"/u/"+groupTopicComment.member.id+"'>"+groupTopicComment.member.name+"</a>”的评论</p>"+groupTopicComment.content+"</code></pre>";
                     }
                     html += data[i].content + "<div class='pull-right'><a href='javascript:group.commentReply("+data[i].id+")'>回复</a></div></div>" +
-                        "<form class=\"form-horizontal jeesns_form\" action=\""+base+"/group/comment/"+groupTopicId+"\" method=\"post\" id='comment-form-"+data[i].id+"' style='display: none;'>" +
+                        "<form class=\"form-horizontal muye_form\" action=\""+base+"/group/comment/"+groupTopicId+"\" method=\"post\" id='comment-form-"+data[i].id+"' style='display: none;'>" +
                         "<div class=\"form-group\"><input type='hidden' name='groupTopicCommentId' value='"+data[i].id+"'/>" +
                         "<textarea name=\"content\" class=\"form-control group-comment-content\" rows=\"2\" id=\""+data[i].id+"\"></textarea></div>" +
                         "<div class=\"form-group comment-user\">" +
-                        "<input type=\"submit\" value=\"回复\" class=\"pull-right btn btn-primary mg-t-10 jeesns-submit\"></div></form></div></div>";
+                        "<input type=\"submit\" value=\"回复\" class=\"pull-right btn btn-primary mg-t-10 muye-submit\"></div></form></div></div>";
                 }
                 pageNo = json.page.pageNo;
                 if(json.page.totalPage<=pageNo){
@@ -32,8 +32,8 @@ var group = {
                     $("#moreComment").show();
                 }
                 $("#commentList").append(html);
-                $('.jeesns_form').unbind();
-                jeesns.submitForm();
+                $('.muye_form').unbind();
+                muye.submitForm();
             }
         });
     },
@@ -46,7 +46,7 @@ var group = {
             timeout: 5000,
             success: function (res) {
                 if (res.code < 0) {
-                    jeesnsDialog.errorTips(res.message);
+                    muyeDialog.errorTips(res.message);
                 } else {
                     if (res.code == 0) {
                         _this.html("<i class='icon-heart'></i> 喜欢 | " + res.data);

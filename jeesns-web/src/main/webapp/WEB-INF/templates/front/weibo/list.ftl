@@ -25,7 +25,7 @@
     <script src="${basePath}/res/common/js/zui.min.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
     <script src="${basePath}/res/common/js/jquery.form.js"></script>
-    <script src="${basePath}/res/front/js/jeesns.js"></script>
+    <script src="${basePath}/res/front/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
     <script src="${basePath}/res/front/js/weibo.js"></script>
     <script src="${basePath}/res/plugins/emoji/js/underscore-min.js"></script>
@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col-md-8 white-bg m-b-10">
                 <div class="items weibo-post-area">
-                    <form class="form-horizontal m-t jeesns_form" action="${basePath}/weibo/publish" method="post">
+                    <form class="form-horizontal m-t muye_form" action="${basePath}/weibo/publish" method="post">
                         <p>
                             <textarea cols="5" class="form-control area emoji-render-input" name="content" id="weibo-content"
                                       maxlength="${WEIBO_POST_MAXCONTENT}"></textarea>
@@ -203,7 +203,7 @@
 <#include "/${frontTemplate}/common/footer.ftl"/>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
         $(".weibo-favor").click(function () {
             weibo.favor($(this), "${basePath}")
         });

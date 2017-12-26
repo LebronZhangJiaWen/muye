@@ -22,7 +22,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -80,7 +80,7 @@
                                         <a href="${basePath}/weibo/detail/${weibo.id}" target="_blank">
                                             <span class="label label-info">详情</span>
                                         </a>
-                                        <a class="marg-l-5" target="_jeesnsLink"
+                                        <a class="marg-l-5" target="_muyeLink"
                                            href="${managePath}/weibo/delete/${weibo.id}" confirm="确定要删除微博吗？">
                                             <span class="label label-danger"><i class="fa fa-trash red"></i></span>
                                         </a>
@@ -106,7 +106,7 @@
 </div>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
     });
 </script>
 </body>

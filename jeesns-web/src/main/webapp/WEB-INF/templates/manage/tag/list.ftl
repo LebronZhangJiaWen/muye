@@ -22,7 +22,7 @@
     <script src="${basePath}/res/common/js/bootstrap.min.js"></script>
     <script src="${basePath}/res/manage/js/app.js"></script>
     <script src="${basePath}/res/plugins/layer/layer.js"></script>
-    <script src="${basePath}/res/common/js/jeesns.js"></script>
+    <script src="${basePath}/res/common/js/muye.js"></script>
     <script src="${basePath}/res/common/js/extendPagination.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -42,7 +42,7 @@
                     <div class="box box-primary">
                         <div class="box-header">
                             <h3 class="box-title">
-                                <a href="${managePath}/tag/add/${funcType}" target="_jeesnsOpen"
+                                <a href="${managePath}/tag/add/${funcType}" target="_muyeOpen"
                                    title="添加标签" width="500px" height="300px">
                                     <span class="label label-info">添加</span>
                                 </a>
@@ -63,11 +63,11 @@
                                     <td>${tag.id}</td>
                                     <td>${tag.name}</td>
                                     <td>
-                                        <a href="${managePath}/tag/edit/${tag.id}" target="_jeesnsOpen"
+                                        <a href="${managePath}/tag/edit/${tag.id}" target="_muyeOpen"
                                            title="修改标签" width="500px" height="300px">
                                             <span class="label label-info">修改</span>
                                         </a>
-                                        <a class="marg-l-5" target="_jeesnsLink"
+                                        <a class="marg-l-5" target="_muyeLink"
                                            href="${managePath}/tag/delete/${tag.id}" confirm="确定要删除标签吗？">
                                             <span class="label label-danger"><i class="fa fa-trash red"></i></span>
                                         </a>
@@ -93,7 +93,7 @@
 </div>
 <script type="text/javascript">
     $(function () {
-        $(".pagination").jeesns_page("jeesnsPageForm");
+        $(".pagination").muye_page("muyePageForm");
     });
 </script>
 </body>
