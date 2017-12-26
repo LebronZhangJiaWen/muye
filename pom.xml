@@ -4,25 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lxinet</groupId>
-    <artifactId>jeesns</artifactId>
+    <groupId>com.muyenet</groupId>
+    <artifactId>muye</artifactId>
     <packaging>pom</packaging>
     <version>1.2</version>
-    <name>jeesns</name>
+    <name>muye</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
-        <module>jeesns-core</module>
-        <module>jeesns-common</module>
-        <module>jeesns-model</module>
-        <module>jeesns-dao</module>
-        <module>jeesns-service</module>
-        <module>jeesns-web</module>
+        <module>muye-core</module>
+        <module>muye-common</module>
+        <module>muye-model</module>
+        <module>muye-dao</module>
+        <module>muye-service</module>
+        <module>muye-web</module>
     </modules>
 
     <build>
-        <finalName>jeesns-common</finalName>
+        <finalName>muye-common</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
