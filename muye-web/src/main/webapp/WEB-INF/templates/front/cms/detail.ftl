@@ -62,9 +62,11 @@
                             </dd>
                         </span>
                     </header>
-                    <@ads id=2>
+                    <#list 6..10 as t >
+                    <@ads id=t>
                         <#include "/tp/ad.ftl"/>
                     </@ads>
+                    </#list>
                     <section class="content">
                         ${article.content}
                     </section>
@@ -79,9 +81,11 @@
                         </a>
                     </#if>
                 </article>
-                <@ads id=2>
+                <#list 6..10 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+                </#list>
                 <div class="comments panel">
                     <div class="panel-heading">文章评论</div>
                     <header>
@@ -143,9 +147,11 @@
                     </#list>
                     </div>
                 </div>
-                <@ads id=1>
-                    <#include "/tp/ad.ftl"/>
-                </@ads>
+                <#list 1..5 as t >
+                    <@ads id=t>
+                        <#include "/tp/ad.ftl"/>
+                    </@ads>
+                </#list>
                 <div class="panel">
                     <div class="panel-heading">
                         最新文章

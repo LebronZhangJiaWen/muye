@@ -152,9 +152,11 @@
                 </ul>
             </div>
             <div class="col-md-4 float-left">
-                <@ads id=1>
+<#list 1..5 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+</#list>
                 <div class="panel">
                     <div class="panel-heading">
                         热门微博

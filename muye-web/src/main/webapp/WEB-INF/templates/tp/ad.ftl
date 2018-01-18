@@ -4,11 +4,11 @@
     <#elseif ad.startTime?datetime gt .now?datetime || ad.endTime?datetime lt .now?datetime>
         广告已过期
     <#else>
-        <#if ad.type == 1>
+        <#if ad.type == 1 && ad.isHomeAd==0>
             <a href="${ad.link}" target="_blank"><img src="${ad.content}"/></a>
-        <#elseif ad.type == 2>
+        <#elseif ad.type == 2 && ad.isHomeAd==0>
             <a href="${ad.link}" target="_blank">${ad.content}</a>
-        <#elseif ad.type == 3>
+        <#elseif ad.type == 3 && ad.isHomeAd==0>
             ${ad.content}
         </#if>
     </#if>

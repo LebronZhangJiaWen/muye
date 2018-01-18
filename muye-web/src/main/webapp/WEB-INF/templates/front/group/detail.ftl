@@ -60,9 +60,11 @@
                     ${group.introduce!''}
                     </div>
                 </div>
-                <@ads id=2>
+<#list 6..10 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+</#list>
                 <div class="panel group-topic-list no-border">
                     <div class="panel-heading">
                         全部
@@ -134,9 +136,11 @@
                         </#list>
                     </div>
                 </div>
-                <@ads id=1>
+                <#list 1..5 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+                </#list>
             </div>
         </div>
     </div>

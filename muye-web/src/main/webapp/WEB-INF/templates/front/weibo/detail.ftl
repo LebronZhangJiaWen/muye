@@ -78,9 +78,11 @@
                         </div>
                     </div>
                 </article>
-                <@ads id=2>
+<#list 6..10 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+</#list>
                 <div class="comments panel">
                     <div class="panel-heading">评论(${weibo.commentCount})</div>
                     <header>
@@ -105,9 +107,11 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <@ads id=1>
+<#list 1..5 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+    </#list>
                 <div class="panel">
                     <div class="panel-body weibo-author">
                         <div class="avatar">

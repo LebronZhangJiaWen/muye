@@ -79,9 +79,11 @@
                         </#list>
                     </div>
                 </div>
-                <@ads id=1>
+                <#list 1..5 as t >
+                <@ads id=t>
                     <#include "/tp/ad.ftl"/>
                 </@ads>
+                </#list>
                 <div class="panel">
                     <div class="panel-heading">
                         热门文章
