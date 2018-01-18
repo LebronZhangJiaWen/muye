@@ -43,7 +43,7 @@
                         <div class="box-header">
                             <h3 class="box-title">
                                 <a href="${managePath}/ads/add" target="_muyeOpen"
-                                   title="添加广告" width="800px" height="500px">
+                                   title="添加广告" width="800px" height="600px">
                                     <span class="label label-info">添加</span>
                                 </a>
                             </h3>
@@ -96,7 +96,7 @@
                                     </td>
                                     <td>
                                         <a href="${managePath}/ads/edit/${ads.id}" target="_muyeOpen"
-                                           title="修改广告" width="800px" height="500px">
+                                           title="修改广告" width="800px" height="600px">
                                             <span class="label label-info">修改</span>
                                         </a>
                                         <a class="marg-l-5" target="_muyeLink"
