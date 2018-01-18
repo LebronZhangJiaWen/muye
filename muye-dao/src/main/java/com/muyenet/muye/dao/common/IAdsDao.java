@@ -17,6 +17,6 @@ public interface IAdsDao extends IBaseDao<Ads>{
      * @return
      */
     List<Ads> listByPage(@Param("page") Page page);
-
+    List<Ads> listHomeAds();
     int enable(@Param("id") Integer id);
 }

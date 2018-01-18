@@ -28,4 +28,6 @@ public interface IAdsService {
     Ads findById(Integer id);
 
     ResponseModel enable(Integer id);
+
+    ResponseModel listHomeAds();
 }

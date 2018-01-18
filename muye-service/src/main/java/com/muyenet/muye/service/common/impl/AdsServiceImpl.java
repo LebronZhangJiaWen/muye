@@ -72,4 +72,12 @@ public class AdsServiceImpl implements IAdsService {
         }
         return new ResponseModel(-1, "操作失败");
     }
+
+    @Override
+    public ResponseModel listHomeAds() {
+        List<Ads> list = adsDao.listHomeAds();
+        ResponseModel model = new ResponseModel(0);
+        model.setData(list);
+        return model;
+    }
 }

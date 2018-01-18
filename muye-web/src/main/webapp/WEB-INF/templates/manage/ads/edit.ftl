@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>修改广告 - ${SITE_NAME} - MUYE后台管理系统 - Powered By MUYE</title>
+    <title>修改广告 - ${SITE_NAME} - 定鼎中原网后台管理系统 - Powered By dingdingzhongyuan</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="MUYE"/>
+    <meta name="author" content="dingdingzhongyuan"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
     <link href="${basePath}/res/manage/css/AdminLTE.css" rel="stylesheet">
@@ -80,6 +80,18 @@
                             <select class="form-control" name="status" data-type="selected">
                                 <option value="0" <#if ads.status==0>selected</#if>>禁用</option>
                                 <option value="1" <#if ads.status==1>selected</#if>>启用</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否主页广告</label>
+                        <div class="col-sm-8">
+
+                            <select class="form-control" name="isHomeAd" data-type="selected">
+                                <option value="0" <#if ads.isHomeAd==0>selected</#if>>非主页广告</option>
+                                <option value="1" <#if ads.isHomeAd==1>selected</#if>>主页广告</option>
                             </select>
                         </div>
                     </div>

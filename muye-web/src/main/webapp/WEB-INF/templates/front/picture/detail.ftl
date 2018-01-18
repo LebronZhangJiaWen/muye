@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
-    <title>${picture.member.name}的图片 - ${SITE_NAME} - Powered By MUYE</title>
+    <title>${picture.member.name}的图片 - ${SITE_NAME} - Powered By dingdingzhongyuan</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="MUYE"/>
+    <meta name="author" content="dingdingzhongyuan"/>
     <link href="${basePath}/res/common/css/zui.min.css" rel="stylesheet">
     <link href="${basePath}/res/front/css/app.css" rel="stylesheet">
     <style>

@@ -469,7 +469,7 @@ VALUES
   ('member_login_open','1','会员登录开关，0关闭，1开启'),
   ('member_register_open','1','会员注册开关，0关闭，1开启'),
   ('site_description','MUYE是一款基于JAVA企业级平台研发的社交管理系统，依托企业级JAVA的高效、安全、稳定等优势，开创国内JAVA版开源SNS先河。','网站描述'),
-  ('site_domain','http://www.silinmuye.com/','网站域名'),
+  ('site_domain','http://www.dingdingzhongyuan.com/','网站域名'),
   ('site_keys','MUYE,sns,java','网站关键词'),
   ('site_logo','/res/common/images/muyenet.png','网站LOGO'),
   ('site_name','MUYE','网站名称'),
@@ -487,7 +487,7 @@ VALUES
 
 INSERT INTO `tbl_member` (`id`, `group_id`, `name`, `email`, `phone`, `password`, `sex`, `avatar`, `create_time`, `regip`, `login_count`, `curr_login_time`, `curr_login_ip`, `last_login_time`, `last_login_ip`, `update_time`, `money`, `score`, `is_active`, `status`, `birthday`, `addprovince`, `addcity`, `addarea`, `address`, `qq`, `wechat`, `contact_phone`, `contact_email`, `website`, `introduce`, `is_admin`)
 VALUES
-  (1,0,'admin','admin@silinmuye.com','13800138000','0df979f614a9f226ae85cdc3297aae8e','女','/res/common/images/default-avatar.png',now(),'',0,now(),'127.0.0.1',now(),'127.0.0.1',NULL,0.00,0,1,0,'1971-12-20','','','','','8888888','admin','13800138000','admin@silinmuye.com','www.silinmuye.com','',2);
+  (1,0,'admin','admin@dingdingzhongyuan.com','13800138000','0df979f614a9f226ae85cdc3297aae8e','女','/res/common/images/default-avatar.png',now(),'',0,now(),'127.0.0.1',now(),'127.0.0.1',NULL,0.00,0,1,0,'1971-12-20','','','','','8888888','admin','13800138000','admin@dingdingzhongyuan.com','www.dingdingzhongyuan.com','',2);
 
 INSERT INTO tbl_action(id, create_time, name, log, status, update_time) VALUES
   (1,now(),'会员注册','注册了账号',0,now()),

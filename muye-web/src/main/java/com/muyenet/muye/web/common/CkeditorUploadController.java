@@ -6,8 +6,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.UUID;
 import com.muyenet.muye.core.utils.Const;
+import com.muyenet.muye.util.GetPropertiesUtil;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,15 +48,15 @@ public class CkeditorUploadController extends BaseController {
         String fileName;//上传的图片文件名
         String suffix;//上传图片的文件扩展名
         for (MultipartFile file : upload) {
-            if (file.getSize() > 1 * 1024 * 1024) {
-                out.print("<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction(" + callback + ",''," + "'文件大小不得大于10M');</script>");
+            if (file.getSize() > 1 * 2048 * 1024) {
+                out.print("<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction(" + callback + ",''," + "'文件大小不得大于20M');</script>");
                 out.flush();
                 out.close();
             }
 
             fileName = file.getOriginalFilename();
             suffix = fileName.substring(fileName.lastIndexOf("."), fileName.length()).toLowerCase();
-            String[] imageExtensionNameArray = {".jpg", ".jpeg", ".png", ".gif", ".bmp"};
+            String[] imageExtensionNameArray = {".jpg", ".jpeg", ".gif", ".bmp"};
             String allImageExtensionName = "";
             boolean isContain = false;//默认不包含上传图片文件扩展名
             for (int i = 0; i < imageExtensionNameArray.length; i++) {
@@ -72,8 +74,9 @@ public class CkeditorUploadController extends BaseController {
             String newFileName = UUID.randomUUID() + suffix;
             SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
             String ymd = sdf.format(new Date());
-            String path = Const.UPLOAD_PATH + "/images/" + ymd + "/";
-            String savePath = request.getServletContext().getRealPath(path);
+            Properties prop = new GetPropertiesUtil().getProp();
+            String path = prop.getProperty("imagePath") + "/images/" + ymd + "/";
+            String savePath =path; //request.getServletContext().getRealPath(path);
             if (isContain) {//包含
                 File baseFile = new File(savePath);
                 if (!baseFile.exists()) { // 如果路径不存在，创建
@@ -87,7 +90,7 @@ public class CkeditorUploadController extends BaseController {
                     out.flush();
                     out.close();
                 }
-                String imageUrl = request.getContextPath() + path + newFileName;
+                String imageUrl = prop.getProperty("httpImagePath") +  "/images/"+ymd +"/"+ newFileName;
                 out.print("<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction(" + callback + ",'"+imageUrl+"'," + "'');</script>");
                 out.flush();
                 out.close();

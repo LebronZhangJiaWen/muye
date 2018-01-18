@@ -1,7 +1,7 @@
 <header class="main-header">
-    <a href="http://www.silinmuye.com" class="logo" target="_blank">
-        <span class="logo-mini"><b>MUYE</b></span>
-        <span class="logo-lg"><b>MUYE</b></span>
+    <a href="http://www.dingdingzhongyuan.com" class="logo" target="_blank">
+        <span class="logo-mini"><b>dingdingzhongyuan</b></span>
+        <span class="logo-lg"><b>dingdingzhongyuan</b></span>
     </a>
     <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">

@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>发布文章 - ${SITE_NAME} - MUYE后台管理系统 - Powered By MUYE</title>
+    <title>发布文章 - ${SITE_NAME} - 定鼎中原网后台管理系统 - Powered By dingdingzhongyuan</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="MUYE"/>
+    <meta name="author" content="dingdingzhongyuan"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
     <link href="${basePath}/res/manage/css/AdminLTE.css" rel="stylesheet">

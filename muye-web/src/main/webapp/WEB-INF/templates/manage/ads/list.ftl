@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>广告管理 - ${SITE_NAME} - MUYE后台管理系统 - Powered By MUYE</title>
+    <title>广告管理 - ${SITE_NAME} - 定鼎中原网后台管理系统 - Powered By dingdingzhongyuan</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="MUYE"/>
+    <meta name="author" content="dingdingzhongyuan"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
     <link href="${basePath}/res/manage/css/AdminLTE.css" rel="stylesheet">
@@ -59,6 +59,7 @@
                                     <th>开始时间</th>
                                     <th>结束时间</th>
                                     <th>状态</th>
+                                    <th>首页广告</th>
                                     <th width="150px">操作</th>
                                 </tr>
                                 </thead>
@@ -80,6 +81,17 @@
                                         <a class="marg-l-5" target="_muyeLink" href="${managePath}/ads/enable/${ads.id}" confirm="确定要禁用广告吗？">
                                             <span class="label label-success">启用</span>
                                         </a>
+                                        </#if>
+                                    </td>
+                                    <td>
+                                        <#if ads.isHomeAd=0>
+
+                                                <span class="label label-danger">否</span>
+
+                                        <#else>
+
+                                                <span class="label label-success">是</span>
+
                                         </#if>
                                     </td>
                                     <td>

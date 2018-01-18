@@ -26,6 +26,10 @@ public class Ads {
     private String content;
     private String link;
     private Integer status;
+    private Integer isHomeAd;
+
+    public Ads() {
+    }
 
     public Integer getId() {
         return id;
@@ -105,5 +109,13 @@ public class Ads {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Integer getIsHomeAd() {
+        return isHomeAd;
+    }
+
+    public void setIsHomeAd(Integer isHomeAd) {
+        this.isHomeAd = isHomeAd;
     }
 }

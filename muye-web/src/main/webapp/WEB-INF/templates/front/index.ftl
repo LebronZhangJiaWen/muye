@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${SITE_NAME} - ${SITE_SEO_TITLE} - Powered By MUYE</title>
+    <title>${SITE_NAME} - ${SITE_SEO_TITLE} - Powered By dingdingzhongyuan</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="MUYE"/>
+    <meta name="author" content="dingdingzhongyuan"/>
+    <meta name="baidu-site-verification" content="ezY5ko0raL" />
     <link rel="shortcut icon" href="favicon.ico">
     <link href="${basePath}/res/common/css/zui.min.css" rel="stylesheet">
     <link href="${basePath}/res/front/css/app.css" rel="stylesheet">
@@ -27,12 +28,56 @@
 <div class="container">
     <div id="banner" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
+    <#if (adsModel.data)?size &gt;0>
+        <#list adsModel.data as t>
+            <#if t_index?if_exists==0>
+           <li data-target="#banner" data-slide-to="${t_index}" class="active"></li>
+            <#else >
+            <li data-target="#banner" data-slide-to="${t_index}"></li>
+            </#if>
+        </#list>
+        <#else >
             <li data-target="#banner" data-slide-to="0" class="active"></li>
-            <li data-target="#banner" data-slide-to="1"></li>
-            <li data-target="#banner" data-slide-to="2"></li>
+    </#if>
+
         </ol>
         <div class="carousel-inner">
+
+    <#if (adsModel.data)?size &gt;0>
+        <#assign count=0>
+        <#list adsModel.data as ad>
+            <#if count==0>
             <div class="item active">
+                <a href="${ad.link}" target="_blank"><img alt="${ad.name}" src="${ad.content}"></a>
+                <div class="carousel-caption">
+                    <h3>${ad.name}</h3>
+                    <p></p>
+                </div>
+            </div>
+            <#else>
+                <div class="item">
+                    <a href="${ad.link}" target="_blank"><img alt="${ad.name}" src="${ad.content}"></a>
+                    <div class="carousel-caption">
+                        <h3>${ad.name}</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </#if>
+            <#assign count=count+1 />
+        </#list>
+    <#else >
+        <div class="item active">
+            <img alt="First slide" src="${basePath}/res/front/images/banner1.png" >
+            <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </#if>
+
+
+
+           <#-- <div class="item active">
                 <img alt="First slide" src="${basePath}/res/front/images/banner1.png">
                 <div class="carousel-caption">
                     <h3></h3>
@@ -52,7 +97,10 @@
                     <h3></h3>
                     <p></p>
                 </div>
-            </div>
+            </div>-->
+
+
+
         </div>
     </div>
 

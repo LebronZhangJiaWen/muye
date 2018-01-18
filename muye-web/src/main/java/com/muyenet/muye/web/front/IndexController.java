@@ -1,6 +1,7 @@
 package com.muyenet.muye.web.front;
 
 import com.muyenet.muye.service.cms.IArticleService;
+import com.muyenet.muye.service.common.IAdsService;
 import com.muyenet.muye.service.common.IArchiveService;
 import com.muyenet.muye.common.utils.EmojiUtil;
 import com.muyenet.muye.common.utils.MemberUtil;
@@ -56,6 +57,8 @@ public class IndexController extends BaseController {
     private IMemberFansService memberFansService;
     @Resource
     private ILinkService linkService;
+    @Resource
+    private IAdsService adsService;
 
     @RequestMapping(value={"/", "index"},method = RequestMethod.GET)
     public String index(@RequestParam(value = "key",required = false,defaultValue = "") String key, Integer cateid,Model model) {
@@ -69,6 +72,7 @@ public class IndexController extends BaseController {
         ResponseModel groupTopicModel = groupTopicService.listByPage(page,key,cateid,1,0);
         ResponseModel groupModel = groupService.listByPage(1,page,key);
         ResponseModel linkModel = linkService.recommentList();
+        ResponseModel adsModel = adsService.listHomeAds();
         page.setPageSize(50);
         ResponseModel weiboModel = weiboService.listByPage(page,0,loginMemberId,"");
         model.addAttribute("articleModel",articleModel);
@@ -76,6 +80,7 @@ public class IndexController extends BaseController {
         model.addAttribute("groupModel",groupModel);
         model.addAttribute("weiboModel",weiboModel);
         model.addAttribute("linkModel",linkModel);
+        model.addAttribute("adsModel",adsModel);
 
         return muyeConfig.getFrontTemplate() + "/index";
     }

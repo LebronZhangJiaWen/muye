@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>MUYE后台管理首页 - ${SITE_NAME} - MUYE后台管理系统 - Powered By MUYE</title>
+    <title>定鼎中原网后台管理首页 - ${SITE_NAME} - 定鼎中原网后台管理系统 - Powered By dingdingzhongyuan</title>
     <meta name="keywords" content="${SITE_KEYS}"/>
     <meta name="description" content="${SITE_DESCRIPTION}"/>
-    <meta name="author" content="MUYE"/>
+    <meta name="author" content="dingdingzhongyuan"/>
     <link href="${basePath}/res/common/css/bootstrap.min.css" rel="stylesheet">
     <link href="${basePath}/res/common/css/font-awesome.min.css" rel="stylesheet">
     <link href="${basePath}/res/manage/css/AdminLTE.css" rel="stylesheet">
@@ -29,7 +29,7 @@
             <div class="box-body">
                 <div class="row">
                     <div class="alert alert-info alert-dismissible">
-                        感谢您使用MUYE，MUYE正在不断完善中，可以向我们提出宝贵的建议或意见，MUYE的成长需要大家的支持。
+                        感谢您使用定鼎中原网，定鼎中原网正在不断完善中，可以向我们提出宝贵的建议或意见，定鼎中原网的成长需要大家的支持。
                     </div>
                 </div>
             </div>
@@ -38,9 +38,10 @@
                     <div class="box box-primary">
                         <div class="box-body">
                             <p>
-                                感谢您使用MUYE，MUYE是一款基于JAVA企业级平台研发的社交管理系统，
-                                依托企业级JAVA的高效、安全、稳定等优势，数据库使用MYSQL，全部源代码开放，官方网址：
-                                <a href="http://www.silinmuye.com" target="_blank">www.silinmuye.com</a>。
+                                定鼎中原网是一个开放信息交流论坛，由平原新区的程序员张佳文所成立。
+                                致力于打造的社区无下限交流网站，改网站态度奔放，崇尚自由，正能量，补位任何利益团体服务。
+                                在这个论坛你可以放开的阐述你观点，拒绝任何广告软文，在这里你可以随意吐槽，但也要学着分辨真伪，谢谢有你的支持！
+                                <a href="http://www.dingdingzhongyuan.com" target="_blank">www.dingdingzhongyuan.com</a>。
                             </p>
                             <p>
 
@@ -55,9 +56,9 @@
                                    <#--href="http://wpa.qq.com/msgrd?v=3&uin=819126279&site=qq&menu=yes" target="_blank">-->
                                     <#--<i class="fa fa-qq"> </i> 联系我-->
                                 <#--</a>-->
-                                <a class="btn btn-white btn-bitbucket" href="http://www.silinmuye.com" target="_blank">
+                               <#-- <a class="btn btn-white btn-bitbucket" href="http://www.dingdingzhongyuan.com" target="_blank">
                                     <i class="fa fa-home"></i> 访问官网
-                                </a>
+                                </a>-->
                             </p>
                         </div>
                     </div>
@@ -66,8 +67,8 @@
                     <div class="box box-primary">
                         <div class="box-body">
                             <p>
-                                技术支持：<a href="http://www.silinmuye.com">牧野网络（www.silinmuye.com）</a><br/>
-                                产品交流：<a href="http://www.silinmuye.com">牧野社区（www.silinmuye.com）</a><br/>
+                                <#--技术支持：<a href="http://www.dingdingzhongyuan.com">牧野网络（www.dingdingzhongyuan.com）</a><br/>-->
+                                <#--产品交流：<a href="http://www.dingdingzhongyuan.com">牧野社区（www.dingdingzhongyuan.com）</a><br/>-->
                                 QQ交流群：496429406<br/>
                                 商业授权QQ：2625154561
                             </p>
@@ -106,7 +107,7 @@
                             <p>当前版本:${systemVersion}</p>
                             <p>当前版本更新时间:${systemUpdateTime}</p>
                             <p>最新版本:<span class="lastSystemVersion"></span> &nbsp;&nbsp;
-                                <a href="http://www.silinmuye.com" target="_blank">官网查看</a></p>
+                                <a href="http://www.dingdingzhongyuan.com" target="_blank">官网查看</a></p>
                             <p>最新版本更新时间:<span class="lastSystemUpdateTime"></span></p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -118,10 +119,10 @@
                 <div class="col-md-4">
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h5 class="box-title">二次开发</h5>
+                            <h5 class="box-title">科技服务</h5>
                         </div>
                         <div class="box-body">
-                            <p>我们提供基于MUYE的二次开发,具体请联系我们。</p>
+                            <p>我们各种互联网开发服务,具体请联系我们。</p>
                             <p>同时，我们也提供以下服务：</p>
                             <ol>
                                 <li>网站定制开发</li>
@@ -142,7 +143,7 @@
                             <#--<p>商业授权后我可以获得什么？</p>-->
                             <#--<ol>-->
                                 <#--<li>可以用于商业网站</li>-->
-                                <#--<li>可以去除Powered by MUYE</li>-->
+                                <#--<li>可以去除Powered by dingdingzhongyuan</li>-->
                                 <#--<li>获得更多功能；</li>-->
                                 <#--<li>意见或建议优先考虑；</li>-->
                                 <#--<li>提供技术服务支持；</li>-->
@@ -197,7 +198,7 @@
                                                         <#--<li>修复：发布微博提示undefined</li>-->
                                                         <#--<li>修复：微博不显示图片的问题</li>-->
                                                         <#--<li>修复：在windows系统下微博emoji不能显示问题</li>-->
-                                                        <#--<li>修复：如果应用部署在子目录下，如/MUYE，使用富文本编辑器上传图片时，图片无法显示问题，临时修复方法</li>-->
+                                                        <#--<li>修复：如果应用部署在子目录下，如/dingdingzhongyuan，使用富文本编辑器上传图片时，图片无法显示问题，临时修复方法</li>-->
                                                         <#--<li>修复：微博列表右边热门微博显示跟最新微博内容一样的问题</li>-->
                                                         <#--<li>修复：文章列表右边热门文章显示跟最新文章一样的问题</li>-->
                                                         <#--<li>增加：微博点赞、微博回复、文章回复、文章喜欢、群组帖子回复、群组帖子喜欢发送系统消息通知</li>-->
@@ -421,7 +422,7 @@
 </div>
 <script>
     $(document).ready(function () {
-//        $.getJSON("http://www.MUYE.cn/newVersion?callback=?", function(result){
+//        $.getJSON("http://www.dingdingzhongyuan.cn/newVersion?callback=?", function(result){
 //            $(".lastSystemVersion").html(result.LAST_SYSTEM_VERSION);
 //            $(".lastSystemUpdateTime").html(result.LAST_SYSTEM_UPDATE_TIME);
 //        });
