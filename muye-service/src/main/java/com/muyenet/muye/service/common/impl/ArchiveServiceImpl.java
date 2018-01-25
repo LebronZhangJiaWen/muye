@@ -35,6 +35,7 @@ public class ArchiveServiceImpl implements IArchiveService {
     @Override
     public boolean save(Member member, Archive archive) {
         archive.setMemberId(member.getId());
+        System.out.println(archive.getTitle());
         if (archive.getViewCount() == null) {
             archive.setViewCount(0);
         }
@@ -134,6 +135,11 @@ public class ArchiveServiceImpl implements IArchiveService {
             }
         }
         return archiveDao.update(findArchive) == 1;
+    }
+
+    @Override
+    public int findByArchiveTitle(String title) {
+        return archiveDao.findByArchiveTitle(title);
     }
 
     @Override

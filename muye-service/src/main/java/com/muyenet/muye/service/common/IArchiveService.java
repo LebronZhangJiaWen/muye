@@ -3,6 +3,7 @@ package com.muyenet.muye.service.common;
 import com.muyenet.muye.model.common.Archive;
 import com.muyenet.muye.core.dto.ResponseModel;
 import com.muyenet.muye.model.member.Member;
+import org.apache.ibatis.annotations.Param;
 
 
 /**
@@ -15,7 +16,7 @@ public interface IArchiveService {
     boolean save(Member member, Archive archive);
 
     boolean update(Member member, Archive archive);
-
+    int findByArchiveTitle(String title);
     boolean delete(int id);
 
     void updateViewCount(int id);
